@@ -15,7 +15,6 @@
                 redirect_uri: 'YOUR_REDIRECT_URI'
             });
         </script>
-
         <!-- HelloJS Login -->
         <script>
             function helloSignLogin() {
@@ -26,7 +25,6 @@
                 });
             }
         </script>
-
         <!-- HelloJS Logout -->
         <script>
             function helloSignLogout() {
@@ -35,34 +33,86 @@
                 });
             }
         </script>
-        <style>
+        <!--Styling of Header, body & footer-->
+         <style>
+            .header {
+                background-color: #2cc8dd;
+                color-scheme: dark;
+                padding: 20px;
+                cursor: pointer;
+                width: 100%;
+                text-align: center;
+            }
             .center {
               margin: auto;
-              width: 80%;
-              border: 3px solid #73AD21;
-              padding: 10px; 
+              color-scheme: dark;
+              width: 100%;
+              padding: 15px; 
               margin: 20px;
             }
-        </style>
-        
-</head>
+            .h1{
+                text-align: center;
+            }
+            .h2{
+                text-align: center;
+                font-size: 100%;
+                font-style: initial;
+                color: none;
+                background-color: #2cc8dd;
+            }
+            .footer{
+                background-color: #2cc8dd;
+                padding: 20px;
+                min-width: none;
+                max-width: 100%;
+                text-align: center;
+            }
+            .button {
+                display: inline-block;
+                padding: 15px 25px;
+                font-size: 24px;
+                cursor: pointer;
+                text-align: center;
+                text-decoration: none;
+                outline: none;
+                color: #fff;
+                background-color: #2cc8dd;
+                border: none;
+                border-radius: 15px;
+                box-shadow: 0 9px #999;
+            }
+            .button:hover {background-color: #2cc8dd}
+            .button:active {
+                background-color: #2cc8dd;
+                box-shadow: 0 5px #666;
+                transform: translateY(4px);
+            }
+        </style>  
+    </head>
+
     <body>
+        <!--Header-->
         <div class="container">
             <div class="header">
                 <h1>HELLO SIGN API</h1>
             </div>
         </div>
-        <div class="center">
-            <h2>Sign in to access the document</h2>
-            <button onclick="helloSignLogin()">Login</button>
-            <button onclick="helloSignLogout()">Logout</button>
+        <!--Center-->
+        <div class="container">
+            <div class="center">
+                <p class="p">Click the button below to login</p>
+                <button class="button" onclick="helloSignLogin()">Login</button>
+                <p class="p">Click the button below to logout</p>
+                <button class="button" onclick="helloSignLogout()">Logout</button>
+            </div>
         </div>
+        <!--Content-->
         <div class="content">
-            <h2>Document # 1</h2>
+            <h2 class="h2">Document # 1</h2>
             <iframe src="https://app.hellosign.com/editor/embeddedSign?signature_id=YOUR_SIGNATURE_ID" width="100%" height="600px" frameborder="0"></iframe>
         </div>
         <div class="content">
-            <h2>Document # 2</h2>
+            <h2 class="h2">Document # 2</h2>
             <iframe src="https://app.hellosign.com/editor/embeddedSign?signature_id=YOUR_SIGNATURE_ID" width="100%" height="600px" frameborder="0"></iframe>
         </div>
         <script>
@@ -87,8 +137,11 @@
                 }
             });
         </script>
-        <div class="footer">
-            <p>Footer</p>
+         <!--Footer-->
+        <div class="container">
+            <div class="footer">
+                <h1>Footer</h1>
+            </div>
         </div>
     </body>
  </html>
