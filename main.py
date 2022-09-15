@@ -5,7 +5,7 @@ from hellosign_sdk import \
 
 configuration = Configuration(
     # Configure HTTP basic authorization: api_key
-    username="YOUR_API_KEY",
+    username="9c0384afef4e8f02edc6fce4c1e8053726cd522de13519a8236c6aaf8661f110",
 
     # or, configure Bearer (JWT) authorization: oauth2
     # access_token="YOUR_ACCESS_TOKEN",
