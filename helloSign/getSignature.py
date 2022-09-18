@@ -1,19 +1,23 @@
+from pprint import pprint
 from hellosign_sdk import HSClient
 
-# Initialize HSClient using email and password
-client = HSClient(email_address="shibbonstar@gmail.com", password="$e6Sb$3nQ4EESsS")
+f = open('api.txt', 'r')
+api_key = f.read()
+client = HSClient(api_key=api_key)
 
-# Initialize HSClient using api key
-client = HSClient(api_key="9c0384afef4e8f02edc6fce4c1e8053726cd522de13519a8236c6aaf8661f110")
+print(client)
+print(client.get_account_info())
 
-# Initialize HSClient using api token
-client = HSClient(access_token="9c0384afef4e8f02edc6fce4c1e8053726cd522de13519a8236c6aaf8661f110")
 
-# print(client.account.email_address)
-account = client.get_account_info()
-print(account)
+client.send_signature_request(
+        test_mode=True,
+        title="title=Test Title.",
+        subject="Test Subject",
+        message="Please sign this.",
+        signers=[{ 'email_address': 'shibbonstar@gmail.com', 'name': 'Shoto Morisaki' }], #Receiver
+        files=['Medical-Doctors-Note-for-Work-Sample-Word-Download copy.jpg'] #File name
+)
 
-# from pprint import pprint
 
 # from hellosign_sdk import \
 #     ApiClient, ApiException, Configuration, apis
