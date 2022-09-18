@@ -44,3 +44,5 @@ def check_password():
 if check_password():
     st.write("Here goes Hellosign API app...")
     st.button("Click me")
+    st.write(st.session_state["password_correct"])
+    

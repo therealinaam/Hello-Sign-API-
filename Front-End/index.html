@@ -4,6 +4,8 @@
         <title>HELLO SIGN API</title>
         <meta charset="utf-8" name = "description" content = "Minimal HTML Code"> <!-- Meta tags -->
         <link rel="stylesheet" href="style.css"> <!-- Link to CSS file -->
+        <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" /> <!-- Link to PyScript CSS file -->
+        <script src="https://pyscript.net/latest/pyscript.js"></script> <!-- Link to PyScript JS file -->
         <script src="https://cdn.jsdelivr.net/npm/hellojs/dist/hello.all.min.js"></script> <!-- HelloJS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- jQuery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> <!-- jQuery Cookie -->
@@ -17,13 +19,7 @@
         </script>
         <!-- HelloJS Login -->
         <script>
-            function helloSignLogin() {
-                hello('helloSign').login().then(function() {
-                    hello('helloSign').api('me').then(function(r) {
-                        console.log(r);
-                    });
-                });
-            }
+            <pyscript src="HELLO-SIGN-API\signin.py"></pyscript>
         </script>
         <!-- HelloJS Logout -->
         <script>
