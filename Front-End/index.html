@@ -1,17 +1,23 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>HELLO SIGN API</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="utf-8" name = "description" content = "Minimal HTML Code"> <!-- Meta tags -->
-        <link rel="stylesheet" href="style.css"> <!-- Link to CSS file -->
-        <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" /> <!-- Link to PyScript CSS file -->
-        <script src="https://pyscript.net/latest/pyscript.js"></script> <!-- Link to PyScript JS file -->
-        <script src="https://cdn.jsdelivr.net/npm/hellojs/dist/hello.all.min.js"></script> <!-- HelloJS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- jQuery -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> <!-- jQuery Cookie -->
-        </script>
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-Ua-Compatible" content="IE=Edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="title" property="title" content="Log in | HelloSign" />
+<meta name="description" property="description" content="Log in to your HelloSign account." />
+<title>Log in | HelloSignAPI</title>				\
+<script type="text/javascript" nonce="6P9WwTV6cGTMnawBudEGTa8S">
+</script>
+<link rel="stylesheet" href="style.css" type="text/css" /> <!-- Link to CSS file -->
+<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" /> <!-- Link to PyScript CSS file -->
+<script src="https://pyscript.net/latest/pyscript.js"></script> <!-- Link to PyScript JS file -->
+<script src="https://cdn.jsdelivr.net/npm/hellojs/dist/hello.all.min.js"></script> <!-- HelloJS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> <!-- jQuery Cookie -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script> <!-- jQuery Validate -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script> <!-- jQuery Validate Additional Methods -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/localization/messages_en.min.js"></script> <!-- jQuery Validate Messages -->
+    <head>     
         <script>
             hello.init({
                 hellojs: 'YOUR_CLIENT_ID'
@@ -31,7 +37,7 @@
                 width: 50%;
                 column-count: 2;
                 column-gap: 20px;
-                column-width: 400px;
+                column-width: 550px;
                 padding: 20px;
             }
             .row {
@@ -111,6 +117,7 @@
         <div class="row">
             <div class="column background-color:#2cc8dd;">
                     <h2>Sign in with HelloSign</h2>
+                    <img src="">
                     <pyscript src="signin.py"></pyscript>
                     <p class="p">Click the button below to login</p>
                     <button class="button" onclick="window.location.href='signin.py'">Login</button>
