@@ -7,10 +7,10 @@ header {
     color: #ffffff;
     padding: 10px;
     text-align: center;
-    font-size: 35px;
+    font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 300;
-    letter-spacing: 10px;
+    letter-spacing: 20px;
     text-transform: uppercase;
     position: fixed;
     top: 0;
@@ -49,7 +49,7 @@ header a:link {
 body {
     background-color: #f0f0f0;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
+    font-size: 20px;
     color: #333;
     line-gap-override: 1.5;
     line-height: 1.5;
@@ -75,15 +75,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 30px;
 }
 
 h2 {
-    font-size: 45px;
+    font-size: 26px;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 22px;
 }
 
 h4 {
@@ -162,7 +162,7 @@ img {
     display: inline-block;
     padding: 10px 0;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 700;
 }
 
