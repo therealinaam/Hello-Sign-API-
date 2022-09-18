@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>HELLO SIGN API</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8" name = "description" content = "Minimal HTML Code"> <!-- Meta tags -->
         <link rel="stylesheet" href="style.css"> <!-- Link to CSS file -->
         <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" /> <!-- Link to PyScript CSS file -->
@@ -18,13 +19,23 @@
                 redirect_uri: 'YOUR_REDIRECT_URI'
             });
         </script>
-
-        <!--Hello Login-->
-        <pyscript src="signin.py"></pyscript>
-
         
         <!--Styling of Header, body & footer-->
          <style>
+            * {
+                box-sizing: border-box;
+            }
+            .column {
+                float: left;
+                width: 50%;
+                padding: 10px;
+            }
+            .row {
+                margin: 0 -5px;
+                content: "";
+                display: table;
+                clear: both;
+            }
             .header {
                 background-color: #2cc8dd;
                 color-scheme: dark;
@@ -88,48 +99,27 @@
             </div>
         </div>
 
-        <!--Center-->
-        <div class="container">
-            <div class="center">
-                <p class="p">Click the button below to login</p>
-                <button class="button" onclick="window.location.href='signin.py'">Login</button>
-                <p class="p">Click the button below to logout</p>
-                <button class="button" onclick="window.location.href='index.html'">Logout</button>
-            </div>
+        <!--Body-->
+        <div class="row">
+            <div class="column background-color:#2cc8dd;">
+                    <h2>Sign in with HelloSign</h2>
+                    <pyscript src="signin.py"></pyscript>
+                    <p class="p">Click the button below to login</p>
+                    <button class="button" onclick="window.location.href='signin.py'">Login</button>
+                    <p class="p">Click the button below to logout</p>
+                    <button class="button" onclick="window.location.href='index.html'">Logout</button>
+                </div>
+                <div class="column background-color:#2cc8dd;">
+                    <h2>Sign in with your Google account</h2>
+                    <p class="p">Click the button below to login</p>
+                    <button class="button" onclick="window.location.href='https://accounts.google.com/o/oauth2/v2/auth?scope=https://www.googleapis.com/auth/userinfo.email&access_type=offline&include_granted_scopes=true&response_type=code&state=state_parameter_passthrough_value&redirect_uri=YOUR_REDIRECT_URI&client_id=YOUR_CLIENT_ID'">Login</button>
+                    <p class="p">Click the button below to logout</p>
+                    <button class="button" onclick="window.location.href='index.html'">Logout</button>
+                    <pyscript src="signin.py"></pyscript>
+                </div>
         </div>
-
-        <!--Content-->
-        <div class="content">
-            <h2 class="h2">Document # 1</h2>
-            <iframe src="https://app.hellosign.com/editor/embeddedSign?signature_id=YOUR_SIGNATURE_ID" width="100%" height="600px" frameborder="0"></iframe>
-        </div>
-        <div class="content">
-            <h2 class="h2">Document # 2</h2>
-            <iframe src="https://app.hellosign.com/editor/embeddedSign?signature_id=YOUR_SIGNATURE_ID" width="100%" height="600px" frameborder="0"></iframe>
-        </div>
-        <script>
-            $(document).ready(function() {
-                var email = $.cookie('email');
-                if (email) {
-                    hello('helloSign').login().then(function() {
-                        hello('helloSign').api('me').then(function(r) {
-                            console.log(r);
-                        });
-                    });
-                }
-            });
-        </script>
-        <script>
-            $(document).ready(function() {
-                var email = $.cookie('email');
-                if (email) {
-                    hello('helloSign').logout().then(function() {
-                        console.log('Logged out');
-                    });
-                }
-            });
-        </script>
-        
+        <h2 class="h2">Document # 1</h2>
+        <iframe src="https://app.hellosign.com/editor/embeddedSign?signature_id=YOUR_SIGNATURE_ID" width="100%" height="600px" frameborder="0"></iframe>
          <!--Footer-->
         <div class="container">
             <div class="footer">

@@ -10,13 +10,14 @@ header {
     font-size: 35px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 300;
-    letter-spacing: 2px;
+    letter-spacing: 10px;
     text-transform: uppercase;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 999;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
 }
 
 header a {
