@@ -9,26 +9,20 @@
         <script src="https://cdn.jsdelivr.net/npm/hellojs/dist/hello.all.min.js"></script> <!-- HelloJS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- jQuery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> <!-- jQuery Cookie -->
-        <!-- HelloJS Configuration -->
+        </script>
+
         <script>
             hello.init({
-                helloSign: 'YOUR_CLIENT_ID'
+                hellojs: 'YOUR_CLIENT_ID'
             }, {
                 redirect_uri: 'YOUR_REDIRECT_URI'
             });
         </script>
-        <!-- HelloJS Login -->
-        <script>
-            <pyscript src="HELLO-SIGN-API\signin.py"></pyscript>
-        </script>
-        <!-- HelloJS Logout -->
-        <script>
-            function helloSignLogout() {
-                hello('helloSign').logout().then(function() {
-                    console.log('Logged out');
-                });
-            }
-        </script>
+
+        <!--Hello Login-->
+        <pyscript src="signin.py"></pyscript>
+
+        
         <!--Styling of Header, body & footer-->
          <style>
             .header {
@@ -93,15 +87,17 @@
                 <h1>HELLO SIGN API</h1>
             </div>
         </div>
+
         <!--Center-->
         <div class="container">
             <div class="center">
                 <p class="p">Click the button below to login</p>
-                <button class="button" onclick="helloSignLogin()">Login</button>
+                <button class="button" onclick="window.location.href='signin.py'">Login</button>
                 <p class="p">Click the button below to logout</p>
-                <button class="button" onclick="helloSignLogout()">Logout</button>
+                <button class="button" onclick="window.location.href='index.html'">Logout</button>
             </div>
         </div>
+
         <!--Content-->
         <div class="content">
             <h2 class="h2">Document # 1</h2>
@@ -133,6 +129,7 @@
                 }
             });
         </script>
+        
          <!--Footer-->
         <div class="container">
             <div class="footer">
