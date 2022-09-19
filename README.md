@@ -5,6 +5,8 @@
 This project was inspired by a teammate's idea. The API used this time is "HelloSign API", which is mainly good at exchanging contracts and pdf. When I was thinking about what form of contract to take for this project, I came up with the idea of having to show the doctor's signature to the teacher when I was in high school. If I could easily get medical signatures and download them in the pdf format I wanted, I would have liked stronger security. We planned this project to embody these ideas.
 
 ## What it does
+Aimed at getting signatures on medical documents easily, the outline of the program is to request a document, have it approved, and then download the document. Since all documents are protected by personal information, this platform is equipped with a login function, aiming to protect all information used.
+
 ### Signature Conservation:
 
 ### Login Form
