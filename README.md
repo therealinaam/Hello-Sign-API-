@@ -1,4 +1,4 @@
-# Hello-Sign-API-
+# HelloSign API Project
 
 ## Inspiration
 
